@@ -38,12 +38,11 @@ button{
     height: 10%;
     flex-grow: 1;
     flex-shrink: 2;
-    border: 1px solid;
 }
 
 #sketch{
     background-color: rgba(139, 0, 0, 0.601);
-    color: black;
+    color: white;
     font-weight: bolder;
     border: 1px solid red;
 }
