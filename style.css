@@ -25,9 +25,10 @@ button{
 .container{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    min-width: 600px;
     min-height: 500px;
     border: 1px solid #669bbc;
+    margin: 0 auto;
 }
 
 #sketch{
