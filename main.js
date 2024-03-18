@@ -9,4 +9,142 @@
 // use mouseover eventlistener for color generator
 // store amount of colors in array
 
+// store values 
+
+// parent node
+let container = 
+document.querySelector(".container") ;
+
+let sketch =
+document.querySelector("#sketch") ;
+let eachdiv =
+document.querySelectorAll(".container > div")
+
+// list of colors 
+function showColor(){
+
+    let colors = [
+    "#780000",
+    "#c1121f"
+    ]
+    let colorValue =
+     colors[Math.floor(Math.random() * colors)] ;
+
+     return colorValue;
+    
+}
+
+let grids = [
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div")
+]
+
+sketch.addEventListener("click", function(){
+
+    for (let i = 0; i < grids.length; i++){
+        container.appendChild(grids[i]);
+    }
+    console.log(container);
+
+})
+
+
 
