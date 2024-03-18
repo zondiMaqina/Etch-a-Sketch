@@ -21,9 +21,9 @@ document.querySelector("#sketch") ;
 let reset =
 document.querySelector("#reset") ;
 
-
 let eachdiv =
 document.querySelectorAll(".container > div")
+
 
 // list of colors 
 function showColor(){
@@ -142,17 +142,23 @@ let grids = [
     document.createElement("div")
 ]
 
+
+// hover over children nodes
 sketch.addEventListener("click", function(){
 
     for (let i = 0; i < grids.length; i++){
         container.appendChild(grids[i]);
+        
     }
 
+    grids.forEach((d) => {
+        
+        d.addEventListener("mouseover", 
+        function(){
+            d.style.backgroundColor = "blue";
+        })
+    })
 }) ;
 
 
 
-reset.addEventListener("click", () => {
-
-    
-})
