@@ -12,6 +12,9 @@
 // store values 
 
 // parent node
+let body =
+document.querySelector("body") ;
+
 let container = 
 document.querySelector(".container") ;
 
@@ -169,6 +172,8 @@ sketch.addEventListener("click", function(){
         container.appendChild(grids[i]);
         
     }
+    body.style.backgroundColor = "#6c757d";
+    container.style.backgroundColor = "#f8f9fa";
 
     grids.forEach((d) => {
         
