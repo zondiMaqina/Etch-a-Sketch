@@ -6,8 +6,8 @@ an Odin Project Practical where i test my DOM manipulation skills.
 
 >have a parent node -- div container
 >style the parennt node with flexbox }
-```flex-wrap; width: fit-content; margin: 0 auto;```
->hafve two buttons start and reset
+>```flex-wrap; width: fit-content; margin: 0 auto;```
+>have two buttons start and reset
 
 ## Simulation
 
