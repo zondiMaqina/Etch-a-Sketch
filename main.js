@@ -161,4 +161,10 @@ sketch.addEventListener("click", function(){
 }) ;
 
 
+reset.addEventListener("click", function(){
 
+    grids.forEach((d) =>{
+
+       d.style.backgroundColor = "white" 
+    })
+})
