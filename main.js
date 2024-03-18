@@ -28,16 +28,12 @@ document.querySelectorAll(".container > div")
 // list of colors 
 function showColor(){
 
-    let colors = [
-    "#780000",
-    "#c1121f"
-    ]
-    let colorValue =
-     colors[Math.floor(Math.random() * colors)] ;
 
-     return colorValue;
     
 }
+let color_view = showColor();
+
+console.log(color_view);
 
 let grids = [
     document.createElement("div"),
@@ -142,6 +138,29 @@ let grids = [
     document.createElement("div")
 ]
 
+let colors = [
+    "#780000",
+    "#c1121f",
+    "#d90429",
+    "#f77f00",
+    "#8d99ae",
+    "#2b2d42",
+    "#edf2f4",
+    "#e3d5ca",
+    "#669bbc",
+    "#dad7cd",
+    "#588157",
+    "#3a5a40",
+    "#344e41",
+    "#03045e",
+    "#023e8a",
+    "#0077b6",
+    "#48cae4",
+    "#6c757d",
+    "#343a40",
+    "#ced4da"
+    ] ;
+
 
 // hover over children nodes
 sketch.addEventListener("click", function(){
@@ -155,7 +174,10 @@ sketch.addEventListener("click", function(){
         
         d.addEventListener("mouseover", 
         function(){
-            d.style.backgroundColor = "blue";
+            let colorValue =
+            colors[Math.floor(Math.random() * colors.length)] ;
+        
+            d.style.backgroundColor = colorValue;
         })
     })
 }) ;
