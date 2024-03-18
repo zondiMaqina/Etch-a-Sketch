@@ -17,6 +17,11 @@ document.querySelector(".container") ;
 
 let sketch =
 document.querySelector("#sketch") ;
+
+let reset =
+document.querySelector("#reset") ;
+
+
 let eachdiv =
 document.querySelectorAll(".container > div")
 
@@ -142,9 +147,12 @@ sketch.addEventListener("click", function(){
     for (let i = 0; i < grids.length; i++){
         container.appendChild(grids[i]);
     }
-    console.log(container);
 
+}) ;
+
+
+
+reset.addEventListener("click", () => {
+
+    
 })
-
-
-
